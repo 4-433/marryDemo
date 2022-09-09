@@ -2,7 +2,7 @@
  * @Author: chaichai chaichai@cute.com
  * @Date: 2022-09-06 14:41:08
  * @LastEditors: chaichai chaichai@cute.com
- * @LastEditTime: 2022-09-06 15:25:36
+ * @LastEditTime: 2022-09-09 09:00:14
  * @FilePath: \marry\src\views\404.vue
  * @Description: 
  * 
@@ -14,7 +14,7 @@
     <br>
     找不到这个页面啊！是不是打错啦!<br><br>
     <el-button @click="$router.push('/')" style="cursor: pointer;">👉返回首页👈</el-button>
-    <br><br> &copy; 梦蔷薇.com
+    <br><br> &copy; 梦蔷薇.xyz
 </div>
 </template>
 
