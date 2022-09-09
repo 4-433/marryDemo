@@ -108,13 +108,13 @@ export default {
     }
     .eventsWarp {
       .info {
-        font-size: 45px;
+        font-size: 35px;
         text-align: center;
         font-weight: lighter;
         color: #000;
       }
       .info2 {
-        font-size: 35px;
+        font-size: 30px;
         margin-bottom: 60px;
         text-align: center;
         font-weight: lighter;
