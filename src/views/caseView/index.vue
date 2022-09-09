@@ -52,12 +52,7 @@
 
       <!-- video --statrt -->
       <div v-animate="'animate__animated animate__fadeInUp'" class="videoWarp">
-       <video-player
-          class="video-player vjs-custom-skin diyVideo"
-          ref="videoPlayer"
-          :playsinline="true"
-          :options="playerOptions"
-        ></video-player>
+        <video-player class="video-player vjs-custom-skin diyVideo" ref="videoPlayer" :playsinline="true" :options="playerOptions"></video-player>
       </div>
       <!-- video --end -->
 
@@ -75,12 +70,12 @@
 </template>
 
 <script>
-import  VideoPlayer  from '@/components/VideoView'
+import VideoPlayer from '@/components/VideoView'
 // import 'video.js/dist/video-js.css'
 
 export default {
   name: 'CaseIndex',
-  components:{VideoPlayer},
+  components: { VideoPlayer },
   data() {
     return {
       // 套餐列表
@@ -100,11 +95,11 @@ export default {
       ],
       // 项目列表
       eventList: ['仪式', '婚礼跟拍', '乐队', '司仪', '婚纱礼服', '造型化妆', '花艺', '婚纱租赁', '灯具'],
-       playerOptions: {
-        controls: false,//开启交互，即是用户可控。
-        muted: true,//开启视频时是否静音
-        fluid: true,//根据外层css样式大小，自动填充宽高！比较实用，可搭配响应式
-        reload: "auto",//重载
+      playerOptions: {
+        controls: false, //开启交互，即是用户可控。
+        muted: true, //开启视频时是否静音
+        fluid: true, //根据外层css样式大小，自动填充宽高！比较实用，可搭配响应式
+        reload: 'auto', //重载
         // playbackRates: [0.7, 1.0, 1.5, 2.0], // 播放速度
         autoplay: true, // 如果true,浏览器准备好时开始回放。
         // muted: false, // 默认情况下将会消除任何音频。
@@ -118,7 +113,7 @@ export default {
             // src: require('@/assets/video/4.mp4'), // 路径
             type: 'video/mp4' // 类型
           }
-        ],
+        ]
       }
     }
   }
@@ -136,7 +131,7 @@ export default {
       margin-bottom: 55px;
       text-align: center;
       font-weight: lighter;
-        letter-spacing: 3px;
+      letter-spacing: 3px;
       color: #000;
     }
     .cardWarp {
@@ -255,17 +250,17 @@ export default {
         color: #000;
       }
       .events {
-        width: 1250px;
+        width: 1100px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
         animation-duration: 1s;
         .event {
-          width: 375px;
+          width: 350px;
           height: 80px;
           background-color: #fff;
-          margin-right: 60px;
+          margin-right: 20px;
           margin-bottom: 48px;
           line-height: 80px;
           text-align: center;
@@ -285,35 +280,35 @@ export default {
       position: relative;
       margin-bottom: 130px;
       animation-duration: 1s;
-      ::v-deep{
-        .video-js{
-          border-radius: 30px!important;
+      ::v-deep {
+        .video-js {
+          border-radius: 30px !important;
           .vjs-modal-dialog {
-          border-radius: 30px!important;
+            border-radius: 30px !important;
           }
         }
       }
     }
     .logoWarp {
-      width: 930px;
-      height: 150px;
+      width: 650px;
       margin: 0 auto;
-      margin-bottom: 120px;
+      margin-bottom: 90px;
       img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        width: 650px;
+        // object-fit: cover;
+        margin: 0 auto;
       }
     }
     .btnWarp {
-      width: 315px;
-      height: 90px;
+      width: 200px;
+      height: 65px;
       margin: 0 auto;
-      margin-bottom: 120px;
+      margin-bottom: 90px;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 30px;
+      font-size: 23px;
+      font-weight: lighter;
       color: #fff;
       background-color: #142337;
       border-radius: 15px;
