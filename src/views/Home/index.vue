@@ -76,8 +76,8 @@ export default {
        // fluid: true, // 当true时，Video.js player将拥有流体大小。换句话说，它将按比例缩放以适应其容器。
        sources: [
          {
-           src: require('@/assets/video/1.mp4'), // 路径
-           type: 'video/mp4' // 类型
+          //  src: require('@/assets/video/1.mp4'), // 路径
+          //  type: 'video/mp4' // 类型
          },
        ],
       },
@@ -100,6 +100,9 @@ export default {
       ::v-deep{
         .video-js{
           border-radius: 30px!important;
+          .vjs-modal-dialog {
+          border-radius: 30px!important;
+          }
         }
       }
     }
