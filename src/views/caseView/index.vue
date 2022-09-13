@@ -111,6 +111,7 @@ export default {
         sources: [
           {
             // src: require('@/assets/video/4.mp4'), // 路径
+            src: 'https://marrydemo.oss-cn-hangzhou.aliyuncs.com/vedio/4.mp4',
             type: 'video/mp4' // 类型
           }
         ]
