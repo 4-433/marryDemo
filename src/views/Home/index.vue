@@ -43,6 +43,8 @@
       </div>
     </div>
     <!-- 图片展示 --end -->
+    <!-- 公司历程 --start -->
+    <!-- 公司历程 --end -->
   </div>
 </template>
 
@@ -89,7 +91,7 @@ export default {
   // height: 500px;
   margin: 0 auto;
   position: relative;
-  margin-bottom: 130px;
+  margin-bottom: 80px;
   animation-duration: 1s;
   ::v-deep {
     .video-js {
